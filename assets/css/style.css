@@ -210,14 +210,16 @@ p { color: var(--ink-700); }
 @media (max-width: 960px) {
   .nav-toggle { display: inline-flex; }
   .nav {
-    position: fixed; inset: var(--header-h) 0 0 0;
+    position: fixed; top: var(--header-h); left: 0; right: 0;
     background: #fff;
     flex-direction: column; align-items: stretch;
-    padding: var(--space-6) clamp(1rem, 4vw, 2.5rem);
+    padding: var(--space-5) clamp(1rem, 4vw, 2.5rem) var(--space-6);
     gap: 0;
     transform: translateY(-12px); opacity: 0; pointer-events: none;
     transition: transform var(--transition), opacity var(--transition);
     border-top: 1px solid var(--ink-100);
+    box-shadow: var(--shadow-lg);
+    max-height: calc(100dvh - var(--header-h));
     overflow-y: auto;
   }
   .nav.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
