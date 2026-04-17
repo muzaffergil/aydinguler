@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p C:/claude/a1/assets/css C:/claude/a1/assets/js C:/claude/a1/assets/img/projects C:/claude/a1/assets/img/icons)",
+      "Bash(cp \"C:/Users/Muzaffer/OneDrive/AYDINGÜLER İNŞAAT ŞİRKET/ŞİRKET KAYITLAR/AYDINGÜLER LOGO/linkedin.jpg\" C:/claude/a1/assets/img/logo.jpg)",
+      "Bash(touch C:/claude/a1/.nojekyll)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)"
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hizmetler — Aydıngüler Yapı</title>
+<meta name="description" content="Konut projeleri, ticari yapılar ve kentsel dönüşüm alanlarında Aydıngüler Yapı hizmetleri." />
+<meta name="theme-color" content="#2DA5A5" />
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .service-detail {
+    display: grid; gap: var(--space-7);
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-block: var(--space-8);
+    border-bottom: 1px solid var(--ink-100);
+  }
+  @media (min-width: 960px) { .service-detail { grid-template-columns: 1fr 1fr; } }
+  .service-detail:last-child { border-bottom: none; }
+  .service-detail--reverse .service-detail__visual { order: -1; }
+  @media (max-width: 959px) { .service-detail--reverse .service-detail__visual { order: 0; } }
+  .service-detail__visual {
+    aspect-ratio: 4/3; border-radius: var(--radius-lg);
+    overflow: hidden; background: var(--ink-100);
+  }
+  .service-detail__visual img { width: 100%; height: 100%; object-fit: cover; }
+  .service-detail ul { margin-top: var(--space-4); display: grid; gap: var(--space-2); }
+  .service-detail li { display: flex; gap: var(--space-3); align-items: flex-start; }
+  .service-detail li svg { flex-shrink: 0; margin-top: 4px; }
+  .process-steps { counter-reset: step; display: grid; gap: var(--space-5); }
+  @media (min-width: 720px) { .process-steps { grid-template-columns: repeat(4, 1fr); } }
+  .step {
+    position: relative; padding: var(--space-5);
+    background: #fff; border: 1px solid var(--ink-100);
+    border-radius: var(--radius-lg);
+  }
+  .step::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+    font-family: var(--font-display); font-weight: 800;
+    font-size: var(--text-3xl); color: var(--brand-primary-light);
+    display: block; margin-bottom: var(--space-3); line-height: 1;
+  }
+  .step h4 { margin-bottom: var(--space-2); }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html"><img class="brand__mark" src="assets/img/logo.jpg" alt="" /><span class="brand__text">Aydıngüler<small>Yapı</small></span></a>
+    <button class="nav-toggle" aria-label="Menü" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+    <nav class="nav" id="primaryNav">
+      <a class="nav__link" href="index.html">Anasayfa</a>
+      <a class="nav__link" href="hakkimizda.html">Hakkımızda</a>
+      <a class="nav__link" href="projeler.html">Projeler</a>
+      <a class="nav__link is-active" href="hizmetler.html">Hizmetler</a>
+      <a class="nav__link" href="referanslar.html">Referanslar</a>
+      <a class="nav__link" href="basinda-biz.html">Basında Biz</a>
+      <a class="nav__link" href="kariyer.html">Kariyer</a>
+      <a class="btn btn--primary" href="iletisim.html" style="margin-left: 0.5rem;">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="index.html">Anasayfa</a> <span>/</span> <span>Hizmetler</span></nav>
+    <h1>Hizmetlerimiz</h1>
+    <p>Mimari tasarımdan anahtar teslime, kentsel dönüşümden restorasyon ve tadidata. Her ölçekte kaliteli yapı çözümleri.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Konut -->
+    <div class="service-detail" data-reveal>
+      <div>
+        <span class="eyebrow">Konut Projeleri</span>
+        <h2>Yaşam alanlarını yeniden tasarlıyoruz.</h2>
+        <p class="mt-5">Apartman, site, villa ve butik konut projeleri. Her ölçeğe uygun, modern yaşam standartlarını karşılayan konutlar inşa ediyoruz.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>2+1'den 5+1'e her tip plan</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Akıllı ev altyapısı opsiyonu</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Deprem yönetmeliğine tam uyum</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Enerji verimli cephe ve yalıtım</span></li>
+        </ul>
+      </div>
+      <div class="service-detail__visual">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Modern konut projesi" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Ticari -->
+    <div class="service-detail service-detail--reverse" data-reveal>
+      <div>
+        <span class="eyebrow">Ticari Yapılar</span>
+        <h2>İş dünyasının ihtiyacına cevap veren yapılar.</h2>
+        <p class="mt-5">Ofis, ticaret merkezi, mağaza ve karma kullanım projeleri. İşlevsel tasarım, yüksek konfor standartları.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Marka kimliğine uygun mimari dil</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Akıllı bina yönetim sistemi</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>A sınıfı enerji belgesi hedefi</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Esnek kiralama/satış konseptleri</span></li>
+        </ul>
+      </div>
+      <div class="service-detail__visual">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80" alt="Ticari yapı" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Kentsel Dönüşüm -->
+    <div class="service-detail" data-reveal>
+      <div>
+        <span class="eyebrow">Kentsel Dönüşüm &amp; Tadilat</span>
+        <h2>Mevcut yapılara yeni bir gelecek.</h2>
+        <p class="mt-5">Riskli yapıların yerine güvenli, modern binalar. Tarihi veya kültürel yapıların restorasyonu. Süreç yönetimi ve hak sahipliği danışmanlığı.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>6306 sayılı kanun kapsamında süreç yönetimi</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Hak sahipliği danışmanlığı</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Restorasyon ve güçlendirme</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-primary)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>İç tadilat ve cephe yenileme</span></li>
+        </ul>
+      </div>
+      <div class="service-detail__visual">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Kentsel dönüşüm projesi" loading="lazy" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Süreç -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section__head section__head--center" data-reveal>
+      <span class="eyebrow">Sürecimiz</span>
+      <h2>Bir proje nasıl hayata geçer?</h2>
+      <p class="section__lead" style="margin-inline:auto;">Her proje dört ana aşamadan geçer. Her adımda sizi bilgilendiriyor, onayınızla ilerliyoruz.</p>
+    </div>
+    <div class="process-steps">
+      <article class="step" data-reveal><h4>Fizibilite & Ön Görüşme</h4><p>Arsa analizi, bütçe tahmini ve proje konsepti. Karşılıklı beklentiler netleşir.</p></article>
+      <article class="step" data-reveal><h4>Mimari Tasarım</h4><p>Konsept proje, ruhsat süreci, 3D görseller ve detay mühendislik çizilir.</p></article>
+      <article class="step" data-reveal><h4>İnşaat & Denetim</h4><p>Şantiye kurulur, periyodik raporlama ve kalite kontrol süreçleri işler.</p></article>
+      <article class="step" data-reveal><h4>Anahtar Teslim</h4><p>Son kontroller, iskan, tapu devri ve teslim sonrası garanti süreci başlar.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div>
+        <h2>Projenizi konuşalım.</h2>
+        <p>Arsa analizi, fizibilite veya mevcut projeniz hakkında ücretsiz ön görüşme talep edin.</p>
+      </div>
+      <a class="btn btn--primary btn--lg" href="iletisim.html">Görüşme Talep Et</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" style="color:#fff;"><img class="brand__mark" src="assets/img/logo.jpg" alt="" /><span class="brand__text">Aydıngüler<small>Yapı</small></span></a>
+        <p>Gaziantep merkezli, ulusal ölçekli yapı çözümleri.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 8.5a2.5 2.5 0 00-1.8-1.8C18.6 6.3 12 6.3 12 6.3s-6.6 0-8.2.4A2.5 2.5 0 002 8.5C1.6 10.1 1.6 12 1.6 12s0 1.9.4 3.5a2.5 2.5 0 001.8 1.8c1.6.4 8.2.4 8.2.4s6.6 0 8.2-.4a2.5 2.5 0 001.8-1.8c.4-1.6.4-3.5.4-3.5s0-1.9-.4-3.5z"/><path d="M10 15l5-3-5-3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Kurumsal</h4><ul class="footer__list"><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="hizmetler.html">Hizmetlerimiz</a></li><li><a href="kariyer.html">Kariyer</a></li><li><a href="basinda-biz.html">Basında Biz</a></li></ul></div>
+      <div><h4>Projeler</h4><ul class="footer__list"><li><a href="projeler.html?status=tamamlandi">Tamamlanan</a></li><li><a href="projeler.html?status=devam">Devam Eden</a></li><li><a href="projeler.html?status=yakinda">Yakında</a></li><li><a href="referanslar.html">Referanslar</a></li></ul></div>
+      <div><h4>İletişim</h4><ul class="footer__contact">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Atatürk Mah. Hasan Celal Güzel Cad. No:89/A<br/>Şehitkamil / Gaziantep</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+903423601525">0342 360 15 25</a></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg><a href="mailto:info@aydinguleryapi.com">info@aydinguleryapi.com</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year">2026</span> Aydıngüler Yapı. Tüm hakları saklıdır.</span><span>Geleceği inşa ediyoruz.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

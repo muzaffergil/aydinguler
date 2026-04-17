@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muzaffergil.github.io/aydinguler/sitemap.xml

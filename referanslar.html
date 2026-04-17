@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Referanslar — Aydıngüler Yapı</title>
+<meta name="description" content="Aydıngüler Yapı müşteri yorumları ve referansları." />
+<meta name="theme-color" content="#2DA5A5" />
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .testimonial {
+    padding: var(--space-6);
+    background: #fff;
+    border: 1px solid var(--ink-100);
+    border-radius: var(--radius-lg);
+  }
+  .testimonial__stars { color: #F59E0B; margin-bottom: var(--space-4); letter-spacing: 2px; }
+  .testimonial blockquote { font-size: var(--text-lg); color: var(--ink-700); line-height: 1.7; }
+  .testimonial__author { margin-top: var(--space-5); display: flex; align-items: center; gap: var(--space-3); }
+  .testimonial__avatar {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--brand-primary-light); display: grid; place-items: center;
+    font-weight: 700; color: var(--brand-primary-dark); font-size: var(--text-sm);
+  }
+  .testimonial__name { font-weight: 600; color: var(--ink-900); }
+  .testimonial__role { font-size: var(--text-sm); color: var(--ink-500); }
+  .partner-logos {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-5); align-items: center;
+  }
+  .partner-logo {
+    height: 64px; display: grid; place-items: center;
+    background: #fff; border: 1px solid var(--ink-100);
+    border-radius: var(--radius-md); padding: var(--space-3);
+    color: var(--ink-300); font-weight: 600; font-size: var(--text-sm);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html"><img class="brand__mark" src="assets/img/logo.jpg" alt="" /><span class="brand__text">Aydıngüler<small>Yapı</small></span></a>
+    <button class="nav-toggle" aria-label="Menü" aria-expanded="false" aria-controls="primaryNav"><span></span></button>
+    <nav class="nav" id="primaryNav">
+      <a class="nav__link" href="index.html">Anasayfa</a>
+      <a class="nav__link" href="hakkimizda.html">Hakkımızda</a>
+      <a class="nav__link" href="projeler.html">Projeler</a>
+      <a class="nav__link" href="hizmetler.html">Hizmetler</a>
+      <a class="nav__link is-active" href="referanslar.html">Referanslar</a>
+      <a class="nav__link" href="basinda-biz.html">Basında Biz</a>
+      <a class="nav__link" href="kariyer.html">Kariyer</a>
+      <a class="btn btn--primary" href="iletisim.html" style="margin-left: 0.5rem;">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="index.html">Anasayfa</a> <span>/</span> <span>Referanslar</span></nav>
+    <h1>Referanslar</h1>
+    <p>Müşterilerimizin memnuniyeti en büyük referansımız. İşte onlardan bazıları.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Müşteri Yorumları</span>
+      <h2>Ne diyorlar?</h2>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"Aydıngüler Yapı ile çalıştığımız konut projemiz zamanında ve söz verildiği gibi teslim edildi. İletişimleri ve profesyonellikleri gerçekten etkileyiciydi."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">AY</div>
+          <div><div class="testimonial__name">Ahmet Yılmaz</div><div class="testimonial__role">Park Residence Sakini</div></div>
+        </div>
+      </article>
+
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"Ticaret merkezimizin yapım sürecinde her aşamada bilgilendirildik. Bütçe ve süre hedeflerine tam uyum sağlandı. Kesinlikle tavsiye ederim."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">FK</div>
+          <div><div class="testimonial__name">Fatma Karaca</div><div class="testimonial__role">İş İnsanı</div></div>
+        </div>
+      </article>
+
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"Kentsel dönüşüm süreci bizi çok tedirgin ediyordu ama Aydıngüler ekibi her adımda yanımızdaydı. Yeni evimizi çok seviyoruz."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MÖ</div>
+          <div><div class="testimonial__name">Mehmet Özdemir</div><div class="testimonial__role">Kentsel Dönüşüm Hak Sahibi</div></div>
+        </div>
+      </article>
+
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"Kaliteli malzeme, dikkatli işçilik ve şeffaf iletişim. Yapı sektöründe nadir bulunan bir üçlü."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">SB</div>
+          <div><div class="testimonial__name">Selma Baran</div><div class="testimonial__role">Çamlıca Konakları Sakini</div></div>
+        </div>
+      </article>
+
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"İkinci projemizi de Aydıngüler ile yapıyoruz. Güven ve kalite devam ettikçe ortaklık da sürer."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">HE</div>
+          <div><div class="testimonial__name">Hasan Eroğlu</div><div class="testimonial__role">Yatırımcı</div></div>
+        </div>
+      </article>
+
+      <article class="testimonial" data-reveal>
+        <div class="testimonial__stars">★★★★★</div>
+        <blockquote>"Teslim sonrası bile bizi yalnız bırakmadılar. Küçük sorunlara bile anında müdahale ettiler."</blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">ZD</div>
+          <div><div class="testimonial__name">Zeynep Doğan</div><div class="testimonial__role">Yeşilkent Sitesi Sakini</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <div class="section__head section__head--center" data-reveal>
+      <span class="eyebrow">İş Ortaklarımız</span>
+      <h2>Birlikte çalıştığımız kurumlar</h2>
+      <p class="section__lead" style="margin-inline:auto;">Tedarikçilerimiz, alt yüklenicilerimiz ve çözüm ortaklarımız arasında sektörün önde gelen firmaları yer almaktadır.</p>
+    </div>
+    <div class="partner-logos" data-reveal>
+      <div class="partner-logo">Firma Logo 1</div>
+      <div class="partner-logo">Firma Logo 2</div>
+      <div class="partner-logo">Firma Logo 3</div>
+      <div class="partner-logo">Firma Logo 4</div>
+      <div class="partner-logo">Firma Logo 5</div>
+      <div class="partner-logo">Firma Logo 6</div>
+    </div>
+    <p class="text-center mt-6" style="color: var(--ink-500); font-size: var(--text-sm);">İş ortağı logoları yakında eklenecektir.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div>
+        <h2>Siz de referanslarımız arasında yer alın.</h2>
+        <p>Projenizi birlikte hayata geçirelim.</p>
+      </div>
+      <a class="btn btn--primary btn--lg" href="iletisim.html">İletişime Geç</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" style="color:#fff;"><img class="brand__mark" src="assets/img/logo.jpg" alt="" /><span class="brand__text">Aydıngüler<small>Yapı</small></span></a>
+        <p>Gaziantep merkezli, ulusal ölçekli yapı çözümleri.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 8.5a2.5 2.5 0 00-1.8-1.8C18.6 6.3 12 6.3 12 6.3s-6.6 0-8.2.4A2.5 2.5 0 002 8.5C1.6 10.1 1.6 12 1.6 12s0 1.9.4 3.5a2.5 2.5 0 001.8 1.8c1.6.4 8.2.4 8.2.4s6.6 0 8.2-.4a2.5 2.5 0 001.8-1.8c.4-1.6.4-3.5.4-3.5s0-1.9-.4-3.5z"/><path d="M10 15l5-3-5-3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Kurumsal</h4><ul class="footer__list"><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="hizmetler.html">Hizmetlerimiz</a></li><li><a href="kariyer.html">Kariyer</a></li><li><a href="basinda-biz.html">Basında Biz</a></li></ul></div>
+      <div><h4>Projeler</h4><ul class="footer__list"><li><a href="projeler.html?status=tamamlandi">Tamamlanan</a></li><li><a href="projeler.html?status=devam">Devam Eden</a></li><li><a href="projeler.html?status=yakinda">Yakında</a></li><li><a href="referanslar.html">Referanslar</a></li></ul></div>
+      <div><h4>İletişim</h4><ul class="footer__contact">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Atatürk Mah. Hasan Celal Güzel Cad. No:89/A<br/>Şehitkamil / Gaziantep</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+903423601525">0342 360 15 25</a></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0; margin-top:2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg><a href="mailto:info@aydinguleryapi.com">info@aydinguleryapi.com</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year">2026</span> Aydıngüler Yapı. Tüm hakları saklıdır.</span><span>Geleceği inşa ediyoruz.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
