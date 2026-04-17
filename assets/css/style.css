@@ -211,6 +211,7 @@ p { color: var(--ink-700); }
   .nav-toggle { display: inline-flex; }
   .nav {
     position: fixed; top: var(--header-h); left: 0; right: 0;
+    z-index: 100;
     background: #fff;
     flex-direction: column; align-items: stretch;
     padding: var(--space-5) clamp(1rem, 4vw, 2.5rem) var(--space-6);
